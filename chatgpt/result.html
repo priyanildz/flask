@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+</head>
+<body>
+    <h1>Analysis Result</h1>
+    <h2>Transcript</h2>
+    <p>{{ transcript }}</p>
+    <h2>Grammatical Errors</h2>
+    <ul>
+        {% for error in errors %}
+            <li>{{ error }}</li>
+        {% endfor %}
+    </ul>
+    <h2>Sentiment</h2>
+    <p>{{ sentiment }}</p>
+</body>
+</html>
