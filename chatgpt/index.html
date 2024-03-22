@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Audio Analyzer</title>
+    <title>Audio Analysis</title>
 </head>
 <body>
     <h1>Upload Audio File</h1>
-    <form action="{{ url_for('analyze') }}" method="post" enctype="multipart/form-data">
-        <input type="file" name="file" accept="audio/*" required>
-        <button type="submit">Analyze</button>
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
