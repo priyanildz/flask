@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Sentiment Analysis</h1>
+    <form action="/sentiment" method="post">
+        <label for="phrase">Enter Phrase:</label><br>
+        <input type="text" id="phrase" name="phrase" value=""><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if phrase %}
+        <h2>Phrase:</h2>
+        <p>{{ phrase }}</p>
+        <h2>Sentiment:</h2>
+        <p>Sentiment: {{ sentiment_label }}</p>
+        <p>Polarity: {{ polarity }}</p>
+        <p>Subjectivity: {{ subjectivity }}</p>
+    {% endif %}
+</body>
+</html>

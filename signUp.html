@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMWAD | Sign Up |</title>
+
+    <!--font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- style css link -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+    <!-- header starts here -->
+    <header class="header">
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+            <a href="index.html" class="logo">SAMWAD<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="product.html">Fields</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="review.html">Review</a>
+        </nav>
+        
+        <div class="header-right">
+            <button class="header-button"><a href="signIn.html">SignIn</a></button>
+        </div>
+
+    </header>
+    <!-- header ends here -->
+
+<body class="signin-body">
+    <div class="wrapper">
+        <div class="form-wrapper sign-up">
+            <form action="">
+                <h2>Sign Up</h2>
+                <div class="input-group">
+                    <input type="text" name="username" required>
+                    <label for="username">Username</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="email" name="email" required>
+                    <label for="email">Email</label>
+                </div>
+                
+                <div class="input-group">
+                    <input type="password" name="password" required>
+                    <label for="password">password</label>
+                </div>
+                <div class="remember">
+                    <label><input type="checkbox"> I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="button">Sign Up</button>
+                <div class="signUp-link">
+                    <p>Already have an account? 
+                        <a href="signIn.html">Sign In</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

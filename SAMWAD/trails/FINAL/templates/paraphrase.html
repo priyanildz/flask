@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraphrases</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Paraphrases</h1>
+        <h3>Input Phrase:</h3>
+        <p>{{ input_phrase }}</p>
+        <h3>Paraphrases:</h3>
+        <ul>
+            {% for paraphrase in paraphrases %}
+            <li>{{ paraphrase }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

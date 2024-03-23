@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Correction</title>
+</head>
+<body>
+    <h1>Spelling Correction</h1>
+    <form action="/spelling" method="post">
+        <label for="phrase">Enter Phrase:</label><br>
+        <input type="text" id="phrase" name="phrase" value=""><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if phrase %}
+        <h2>Original Phrase:</h2>
+        <p>{{ phrase }}</p>
+        <h2>Corrected Phrase:</h2>
+        <p>{{ corrected_phrase }}</p>
+    {% endif %}
+</body>
+</html>

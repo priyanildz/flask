@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Correction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Spelling Correction</h1>
+        <h3>Input Phrase:</h3>
+        <p>{{ phrase }}</p>
+        <h3>Corrected Phrase:</h3>
+        <p>{{ corrected_phrase }}</p>
+    </div>
+</body>
+</html>

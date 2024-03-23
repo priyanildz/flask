@@ -1,0 +1,9 @@
+.container {
+    margin: 50px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+}
